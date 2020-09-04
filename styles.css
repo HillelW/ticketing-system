@@ -1,5 +1,13 @@
+table {
+    border-color: #757575;
+}
+
 #thead{
     background-color: #d6ecfe;
+}
+
+th {
+    color: #757575;
 }
 
 #ticket, #priority {
