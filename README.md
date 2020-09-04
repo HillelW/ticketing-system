@@ -11,3 +11,6 @@ Additional data can be loaded by clicking the button labeled `Load More`.
 
 Clicking the button labeled `Load More` more than once will result in an error message, 
 since no more data is available to be loaded.
+
+Although this application currently uses hard-coded data, 
+it can be easily adapted to process a JSON response from an API.

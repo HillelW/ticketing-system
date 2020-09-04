@@ -57,7 +57,7 @@
                         </td>
                       </tr>
                       `
-      };
+      }
 
       tbody.innerHTML = tbodyHtml;
 
@@ -95,6 +95,7 @@
     function loadMore() {
       // if data has already been loaded once, then display an error message
       const table_length = document.getElementById("table").rows.length;
+
       if (table_length > 6) {
         document.getElementById('error').innerHTML = 'There Is No More Data To Display!'
         return
@@ -148,8 +149,8 @@
     }
 
     /**
-     * the following two functions were adapted from https://www.w3schools.com/lib/w3.js
-     * (correct es6 syntax is not followed)
+     * adapted from https://www.w3schools.com/lib/w3.js
+     * to sort by ticket number and priority
      */
     function sortHTML(id, sel, sortvalue, column) {
       const priorityOrder = ['low', 'neutral', 'high']
@@ -200,6 +201,9 @@
       }
     }
 
+    /**
+     * see https://www.w3schools.com/lib/w3.js
+     */
     function getElements(id) {
       if (typeof id == "object") {
         return [id];
@@ -215,18 +219,18 @@
     function sort(column) {
       if (column === 'ticket') {
         // remove mode indication from other column
-        document.getElementById('priority').innerHTML = 'Priority'
+        document.getElementById('priority').innerHTML = 'Priority';
 
-        const mode = document.getElementById('ticket').innerHTML.slice(-1)
-        document.getElementById('ticket').innerHTML = mode === '^' ? 'Ticket Number v' : 'Ticket Number ^'
+        const mode = document.getElementById('ticket').innerHTML.slice(-1);
+        document.getElementById('ticket').innerHTML = mode === '^' ? 'Ticket Number v' : 'Ticket Number ^';
         sortHTML('#table', '.item', 'td:nth-child(1)', 'ticket');
       }
       else if (column === 'priority') {
         // remove mode indication from other column
-        document.getElementById('ticket').innerHTML = 'Ticket Number'
+        document.getElementById('ticket').innerHTML = 'Ticket Number';
 
-        const mode = document.getElementById('priority').innerHTML.slice(-1)
-        document.getElementById('priority').innerHTML = mode === '^' ? 'Priority v' : 'Priority ^'
+        const mode = document.getElementById('priority').innerHTML.slice(-1);
+        document.getElementById('priority').innerHTML = mode === '^' ? 'Priority v' : 'Priority ^';
         sortHTML('#table', '.item', 'td:nth-child(2)', 'priority');
       }
     }
@@ -237,12 +241,12 @@
     * Otherwise, returns 'priority'
     */
     function getSelected() {
-      const ticket = document.getElementById('ticket').innerHTML
+      const ticket = document.getElementById('ticket').innerHTML;
       if (ticket.includes('^') || ticket.includes('v')) {
-        return 'ticket'
+        return 'ticket';
       }
       else {
-        return 'priority'
+        return 'priority';
       }
     }     
   </script>
