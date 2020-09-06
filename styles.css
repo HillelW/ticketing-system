@@ -1,40 +1,41 @@
 table {
-    border-color: #757575;
+  border-color: #757575;
 }
 
-#thead{
-    background-color: #d6ecfe;
+#thead {
+  background-color: #d6ecfe;
 }
 
 th {
-    color: #757575;
+  color: #757575;
 }
 
-#ticket, #priority {
-    cursor:pointer;
+#ticket,
+#priority {
+  cursor: pointer;
 }
 
 #button {
-    border: 0px;
-    padding: 1px;
-    background-color: #757575;
-    margin-top: -11px;
-    border-radius: 0 !important;
-    color: black;
+  border: 0px;
+  padding: 1px;
+  background-color: #757575;
+  margin-top: -11px;
+  border-radius: 0 !important;
+  color: black;
 }
 
 .low {
-    background-color: #58f858 !important;
+  background-color: #58f858 !important;
 }
 
 .high {
-    background-color: #db1604 !important;
+  background-color: #db1604 !important;
 }
 
 .neutral {
-    background-color: #c0c0c0 !important;
+  background-color: #c0c0c0 !important;
 }
 
 .message {
-    color: #757575;
+  color: #757575;
 }
