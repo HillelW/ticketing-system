@@ -134,18 +134,18 @@
                 bytt = 0;
   
                 if (sortvalue) {
-                  v1 = column === 'priority' ? b[ii].querySelector(sortvalue).innerText : b[ii].querySelector(sortvalue).innerText.split('-')[1].trim();
-                  v2 = column === 'priority' ? b[ii + 1].querySelector(sortvalue).innerText : b[ii + 1].querySelector(sortvalue).innerText.split('-')[1].trim();
+                  v1 = column === 'priority' ? b[ii].querySelector(sortvalue).innerText.trim() : b[ii].querySelector(sortvalue).innerText.split('-')[1].trim();
+                  v2 = column === 'priority' ? b[ii + 1].querySelector(sortvalue).innerText.trim() : b[ii + 1].querySelector(sortvalue).innerText.split('-')[1].trim();
                 }
   
                 else {
-                  v1 = 'priority' ? b[ii].innerText : b[ii].innerText.split('-')[1].trim();
-                  v2 = 'priority' ? b[ii + 1].innerText : b[ii + 1].innerText.split('-')[1].trim();
+                  v1 = 'priority' ? b[ii].innerText.trim() : b[ii].innerText.split('-')[1].trim();
+                  v2 = 'priority' ? b[ii + 1].innerText.trim() : b[ii + 1].innerText.split('-')[1].trim();
                 }
   
-                v1 = column === 'priority' ? v1.toLowerCase().split("\n")[0] : v1.toLowerCase();
-                v2 = column === 'priority' ? v2.toLowerCase().split("\n")[0] : v2.toLowerCase();
-  
+                v1 = column === 'priority' ? v1.toLowerCase().split("\n")[0].trim() : v1.toLowerCase();
+                v2 = column === 'priority' ? v2.toLowerCase().split("\n")[0].trim() : v2.toLowerCase();
+                
                 if (column === 'priority' && ((j == 0 && (priorityOrder.indexOf(v1) > priorityOrder.indexOf(v2))) || (j == 1 && (priorityOrder.indexOf(v1) < priorityOrder.indexOf(v2))))) {
                   bytt = 1;
                   break;

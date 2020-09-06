@@ -4,6 +4,11 @@ Welcome to the Ticketing System!
 
 This application tracks tickets and their priorities.
 
+## Browser Versions
+
+For use with Google Chrome Version >= 85.0.4183.83 (Official Build) (64-bit), 
+or Safari Version >= 13.1.2.
+
 ## Getting Started
 
 Clicking on the column named `Ticket Number` sorts the tickets by ticket number.

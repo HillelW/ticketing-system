@@ -1,5 +1,5 @@
 table {
-  border-color: #757575;
+  border-color: #e0e0e0;
 }
 
 #thead {
@@ -7,7 +7,7 @@ table {
 }
 
 th {
-  color: #757575;
+  color: #808080;
 }
 
 #ticket,
@@ -18,24 +18,24 @@ th {
 #button {
   border: 0px;
   padding: 1px;
-  background-color: #757575;
+  background-color: #c0c0c0;
   margin-top: -11px;
   border-radius: 0 !important;
   color: black;
 }
 
 .low {
-  background-color: #58f858 !important;
+  background-color: #84ee95 !important;
 }
 
 .high {
-  background-color: #db1604 !important;
+  background-color: #ff021c !important;
 }
 
 .neutral {
-  background-color: #c0c0c0 !important;
+  background-color: #d3d3d3 !important;
 }
 
 .message {
-  color: #757575;
+  color: #939393;
 }
