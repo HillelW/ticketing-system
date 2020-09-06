@@ -4,6 +4,8 @@ Welcome to the Ticketing System!
 
 This application tracks tickets and their priorities.
 
+## Getting Started
+
 Clicking on the column named `Ticket Number` sorts the tickets by ticket number.
 Clicking on the column named `Priority` sorts the tickets by priority.
 
@@ -18,3 +20,16 @@ since no more data is available to be loaded.
 
 Although this application currently uses hard-coded data, 
 it can be easily adapted to process a dynamic JSON response from an API.
+
+## Author
+
+Hillel Wolin
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+Two functions from the w3 schools library were used in this project. 
+See https://www.w3schools.com/lib/w3.js for more details.
