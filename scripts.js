@@ -57,9 +57,9 @@ populateTable();
  * event handler to load additional data into the html table on button click
  */
 function loadMore() {
-  // if data has already been loaded once, then display an error message
   const tableLength = document.getElementById("table").rows.length;
 
+  // if data has already been loaded once, then display appropriate message
   if (tableLength > 6) {
     document.getElementById("error").innerHTML =
       "There Is No More Data To Display!";
@@ -114,12 +114,15 @@ function loadMore() {
 
 /**
  * adapted from https://www.w3schools.com/lib/w3.js
- * to sort by ticket number or priority
+ * to sort by either ticket number or priority
  */
 function sortHTML(id, sel, sortValue, column) {
   let a, b, i, ii, y, bytt, v1, v2, cc, j;
-  const priorityOrder = ["low", "neutral", "high"];
+
   a = getElements(id);
+
+  // map each priority level to an array index
+  const priorityOrder = ["low", "neutral", "high"];
 
   for (i = 0; i < a.length; i++) {
     for (j = 0; j < 2; j++) {
@@ -169,6 +172,7 @@ function sortHTML(id, sel, sortValue, column) {
           ) {
             bytt = 1;
             break;
+            // otherwise, we are sorting the ticket column
           } else if (
             column != "priority" &&
             ((j == 0 && v1 > v2) || (j == 1 && v1 < v2))
