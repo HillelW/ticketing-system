@@ -142,10 +142,7 @@ function sortHTML(id, sel, sortValue, column) {
             v2 =
               column === "priority"
                 ? b[ii + 1].querySelector(sortValue).innerText.trim()
-                : b[ii + 1]
-                    .querySelector(sortValue)
-                    .innerText.split("-")[1]
-                    .trim();
+                : b[ii + 1].querySelector(sortValue).innerText.split("-")[1].trim();
           } else {
             v1 = "priority"
               ? b[ii].innerText.trim()
