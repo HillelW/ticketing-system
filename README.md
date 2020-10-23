@@ -56,5 +56,5 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-Two functions from the w3 schools library are adapted for use in this project.
+Two functions from the w3 library are adapted for use in this project.
 See https://www.w3schools.com/lib/w3.js for more details.

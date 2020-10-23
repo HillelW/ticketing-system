@@ -1,5 +1,5 @@
 /**
- * loads initial data into the html table
+ * load initial data into the html table
  */
 function populateTable() {
   let initialData = {
